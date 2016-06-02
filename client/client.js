@@ -1,7 +1,7 @@
 // Vendor Dependencies
 import React from 'react';
 import { render } from 'react-dom';
-import { Router, Route, browserHistory } from 'react-router';
+import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import 'materialize-css/dist/js/materialize.min.js';
 import 'materialize-css/dist/css/materialize.min.css';
 
@@ -14,10 +14,12 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import EventDetails from './pages/EventDetails';
 import NewEvent from './pages/NewEvent';
+import Home from './pages/Home';
 
 render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
+      <IndexRoute component={Home} />
       <Route path="dashboard" component={Dashboard} />
       <Route path="login" component={Login} />
       <Route path="signup" component={Signup} />
