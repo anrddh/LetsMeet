@@ -17,7 +17,7 @@ class Home extends React.Component {
           <h4>Scheduling meetings made easy.</h4>
           <img src={mainBannerImg} role="presentation" styleName="main-banner" />
         </article>
-        <article styleName="dasboard">
+        <article styleName="dashboard">
           <img src={dashboardBannerImg} role="presentation" styleName="dashboard-banner" />
           <aside styleName="dashboard-aside">
             <h2>One dashboard to rule 'em all</h2>
