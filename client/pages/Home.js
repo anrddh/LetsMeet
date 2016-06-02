@@ -5,17 +5,26 @@ import cssModules from 'react-css-modules';
 /* styles */
 import styles from '../styles/home.css';
 
+import mainBannerImg from '../images/main-banner.jpg';
+import dashboardBannerImg from '../images/dashboard-banner.jpg';
+
 class Home extends React.Component {
   render() {
     return (
-      <div>
-        <div styleName="center">
+      <section styleName="wrapper">
+        <article styleName="main">
           <h1>Say Hello to LetsMeet!</h1>
           <h4>Scheduling meetings made easy.</h4>
-        </div>
-        <div>
-        </div>
-      </div>
+          <img src={mainBannerImg} role="presentation" styleName="main-banner" />
+        </article>
+        <article styleName="second">
+          <img src={dashboardBannerImg} role="presentation" styleName="dashboard-banner" />
+          <aside styleName="second-aside">
+            <h2>One dashboard to rule 'em all</h2>
+            <h4>View all your events in one centralized location</h4>
+          </aside>
+        </article>
+      </section>
     );
   }
 }

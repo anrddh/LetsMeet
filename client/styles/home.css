@@ -1,7 +1,41 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300);
 
-.center {
+.wrapper {
+  font-family: 'Lato', sans-serif;
+}
+
+.main {
   text-align: center;
   color: #fff;
-  font-family: 'Lato', sans-serif;
+  min-height: 70vh;
+}
+
+.main-banner {
+  width: 80%;
+  margin: 30px auto;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.second {
+  background-color: white;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding: 45px;
+}
+
+.dashboard-banner {
+  width: 60%;
+  margin: 30px 30px;
+  flex: 1;
+  height: 31%;
+}
+
+.second-aside {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
