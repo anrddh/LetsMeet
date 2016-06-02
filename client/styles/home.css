@@ -7,7 +7,6 @@
 .main {
   text-align: center;
   color: #fff;
-  min-height: 70vh;
 }
 
 .main-banner {
@@ -20,22 +19,63 @@
   background-color: white;
   width: 100vw;
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-flow: column;
   padding: 45px;
 }
 
-.dashboard-banner {
-  width: 60%;
-  margin: 30px 30px;
-  flex: 1;
-  height: 31%;
+.dashboard-img-wrapper {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.dashboard-img {
+  width: 100%;
 }
 
 .dashboard-aside {
   display: flex;
-  flex: 1;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+
+.best-time {
+  composes: dashboard;
+  flex-direction: row;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.best-time-img-wrapper {
+  composes: dashboard-img-wrapper;
+  flex: 1;
+}
+
+.best-time-img {
+  display: block;
+  width: 40%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.best-time-aside {
+  composes: dashboard-aside;
+  flex: 1;
+}
+
+.timezones {
+  composes: dashboard;
+}
+
+.timezones-img-wrapper {
+  composes: dashboard-img-wrapper;
+}
+
+.timezones-img {
+  composes: dashboard-img;
+}
+
+.timezones-aside {
+  composes: dashboard-aside;
 }
