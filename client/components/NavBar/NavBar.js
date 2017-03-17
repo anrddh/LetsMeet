@@ -73,7 +73,6 @@ class NavBar extends Component {
         color: '#ffffff',
         primary: true,
         fontSize: '22px',
-        width: '150px',
         backgroundColor: 'transparent',
         boxShadow: '0px',
       },
@@ -142,10 +141,11 @@ class NavBar extends Component {
         lastChild
         style={styles.TollbarGroup}
       >
-
-        <RaisedButton style={styles.loginButton} backgroundColor="transparent" onTouchTap={this.handleAuthClick}>
-          Login
-        </RaisedButton>
+        <RaisedButton
+          style={styles.loginButton}
+          backgroundColor="transparent"
+          onTouchTap={this.handleAuthClick}
+        >Login</RaisedButton>
       </ToolbarGroup>
     );
   }
@@ -174,6 +174,7 @@ class NavBar extends Component {
           <FlatButton
             style={styles.button}
             href={this.state.conditionalHomeLink}
+            hoverColor={'rgba(0, 0, 0, 0)'}
           >
             Lets Meet
           </FlatButton>
