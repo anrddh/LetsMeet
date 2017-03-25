@@ -4,7 +4,6 @@ import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
 
-import Facebook from '../../assets/facebook.png';
 import Google from '../../assets/google.png';
 
 class LoginModal extends Component {
