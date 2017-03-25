@@ -17,8 +17,7 @@ class LoginController extends Component {
 }
 
 LoginController.propTypes = {
-  params: React.PropTypes.object,
-  handleAuthentication: React.PropTypes.func,
+  handleAuthentication: React.PropTypes.func.isRequired,
 
 };
 export default LoginController;
