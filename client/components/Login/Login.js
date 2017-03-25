@@ -98,9 +98,9 @@ class LoginModal extends Component {
 }
 
 LoginModal.propTypes = {
-  open: React.PropTypes.bool,
-  logFail: React.PropTypes.bool,
-  cbCancel: React.PropTypes.func,
+  open: React.PropTypes.bool.isRequired,
+  logFail: React.PropTypes.bool.isRequired,
+  cbCancel: React.PropTypes.func.isRequired,
 };
 
 export default LoginModal;
