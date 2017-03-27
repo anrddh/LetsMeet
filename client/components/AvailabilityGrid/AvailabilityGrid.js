@@ -435,7 +435,7 @@ class AvailabilityGrid extends React.Component {
             <div styleName="cell-aside">
               {date}
             </div>
-            {allTimesRender.map((time, i) => {
+            {allTimesRender.map((time, j) => {
               let disabled = '';
               let styleName = 'cell';
 
@@ -454,10 +454,12 @@ class AvailabilityGrid extends React.Component {
 
               return (
                 <div
-                  key={i}
+                  key={j}
                   styleName={`${styleName}`}
                   data-time={time}
                   data-date={date}
+                  data-row={i}
+                  data-col={j}
                   className={`cell ${disabled}`}
                   onMouseEnter={this.showAvailBox}
                   onMouseLeave={this.hideAvailBox}
