@@ -81,7 +81,7 @@
     "jstimezonedetect": "^1.0.6",
     "lodash": "^4.17.2",
     "material-ui": "^0.17.1",
-    "materialize-css": "^0.98.1",
+    "materialize-css": "^0.99.0",
     "moment": "^2.18.1",
     "mongoose": "^4.8.6",
     "nodemailer": "^3.1.8",
