@@ -14,7 +14,9 @@
     "serve": "npm run clean && npm run copy && npm run build:server && npm run dev",
     "dev": "cross-env NODE_ENV=development node -r dotenv/config ./build/app.js",
     "postinstall": "npm run build",
-    "deploy": "git pull --rebase upstream development && git push heroku development:master"
+    "deploy": "git pull --rebase upstream development && git push heroku development:master",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -91,7 +93,7 @@
     "passport": "^0.3.2",
     "passport-facebook": "^2.1.1",
     "passport-google-oauth": "^1.0.0",
-    "pngquant-bin": "^3.1.1",
+    "pngquant-bin": "^4.0.0",
     "react": "^15.4.1",
     "react-addons-update": "^15.4.1",
     "react-css-modules": "^4.1.0",
@@ -111,7 +113,8 @@
     "webpack-bundle-analyzer": "^2.3.1",
     "webpack-config": "^7.0.0",
     "write-file-webpack-plugin": "^4.0.0",
-    "yargs": "^7.0.1"
+    "yargs": "^7.0.1",
+    "snyk": "^1.105.0"
   },
   "devDependencies": {
     "eslint": "^3.17.1",
@@ -125,5 +128,6 @@
     "webpack-dev-middleware": "^1.10.0",
     "webpack-dev-server": "^2.3.0",
     "webpack-hot-middleware": "^2.16.1"
-  }
+  },
+  "snyk": true
 }
